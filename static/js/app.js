@@ -2,7 +2,8 @@
   const state = {
     photos: undefined,
     text: '',
-    background: ''
+    background: '',
+    fontFamily: ''
   }
 
   main()
@@ -82,7 +83,8 @@
     const photos = state.photos || getMonoColorImage(100)
     const text = state.text || 'hi'
     const background = state.background || '#000'
-    const glyphoto = new Glyphoto(photos, text, { background })
+    const fontFamily = state.fontFamily || 'sans-serif'
+    const glyphoto = new Glyphoto(photos, text, { background, fontFamily })
     glyphoto.renderTo('#app')
     document.querySelector('form').hidden = true
   }
