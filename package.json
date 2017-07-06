@@ -1,0 +1,25 @@
+{
+  "name": "glyphoto",
+  "version": "1.0.0",
+  "description": "Arrange photos by the layout of text.",
+  "main": "static/js/glyphoto.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webzhao/glyphoto.git"
+  },
+  "keywords": [
+    "photo"
+  ],
+  "author": "webzhao@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webzhao/glyphoto/issues"
+  },
+  "homepage": "https://github.com/webzhao/glyphoto#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}

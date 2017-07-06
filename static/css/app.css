@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background: #000
+}
+#app {
+  height: 100%
+}
+form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+form p {
+  font-size: 40px;
+  color: #999;
+  line-height: calc(100vh - 5em);
+
+}
+.drag-active form p {
+  color: #fff
+}
+input {
+  box-sizing: border-box;
+  height: 3em;
+  font-size: 16px;
+  padding: 0.2em 0.5em;
+  border: none;
+  vertical-align: middle;
+}
+button {
+  margin: 1em auto;
+  font-size: 16px;
+  border: none;
+  line-height: 3;
+  padding: 0 1em;
+  cursor: pointer;
+  vertical-align: middle;
+  background: #00bcd4;
+  color: #fff
+}
