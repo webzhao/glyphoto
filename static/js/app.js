@@ -56,13 +56,11 @@
    * after file dropped
    */
   function onFilesDrop(files) {
-    const loadPhotos = Array.from(files)
+    photos = Array.from(files)
         .filter(file => /^image/.test(file.type))
-        .map(getDataURL)
-    Promise.all(loadPhotos).then(photos => {
-      state.photos = photos
-      updatePhotoCount(photos)
-    })
+        .map(file => URL.createObjectURL(file))
+    state.photos = photos
+    updatePhotoCount(photos)
   }
 
   /**
