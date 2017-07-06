@@ -26,7 +26,7 @@ class Glyphoto {
     context.font  = `${fontSize}px ${this.fontFamily}`
     const width   = Math.ceil(context.measureText(this.text).width)
     const height  = fontSize
-    const baselinePos = 0.9
+    const baselinePos = 0.8
     context.fillText(this.text, 0, fontSize * baselinePos)
     const imageData = context.getImageData(0, 0, width, height).data
     const threshold = 128
